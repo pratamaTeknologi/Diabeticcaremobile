@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".hipoglikemia.Fragment_slide16"
+    android:background="@color/backroundpink">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardslide1"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="5dp">
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="5dp"
+            android:layout_marginTop="20dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Penanganan awal hipoglikemia "
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/opensans_bold"
+                    android:padding="20dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Berikan minuman yang manis"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/opensans_bold"
+                    android:padding="20dp"/>
+                <TextView
+                    android:id="@+id/textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kadar gula darah yang merosot drastis bisa mengakibatkan penyandang diabetes kehilangan kesadaran.\n
+\n• Berikan minuman manis 150-200 ml (teh manis atau jus buah) atau 2-3 sendok teh sirup atau madu untuk membantu meningkatkan kadar gula darah.
+\n• Tidak dianjurkan untuk mengkonsumsi makanan tinggi kalori seperti coklat, kue, donat, ice cream atau cake karena gula yang terkandung di dalam minuman akan lebih cepat diserap oleh tubuh dibandingkan gula yang terdapat di dalam makanan.
+Angka kadar gula darah yang kembali stabil akan membuat fungsi organ-organ tubuh berjalan normal kembali.
+
+"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/opensans_semibold"
+                    android:padding="20dp"
+                    android:layout_marginBottom="10dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</FrameLayout>

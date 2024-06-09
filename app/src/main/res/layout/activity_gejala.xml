@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".diabetesMelitus.Gejala"
+    android:background="@color/backroundpink"
+    android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:id="@+id/cardview1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:padding="10dp"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/arrow"
+                        android:layout_marginLeft="5dp"
+                        android:onClick="back"/>
+                    <TextView
+                        android:padding="15dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/opensans_bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gejala Diabetes Melitus"
+                        android:textSize="16sp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="20dp">
+
+                <FrameLayout
+                    android:id="@+id/fragment_gejala"
+                    android:layout_width="match_parent"
+                    android:layout_height="750dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_marginBottom="100dp"
+                    >
+                    <ImageView
+                        android:id="@+id/sound"
+                        android:layout_width="72dp"
+                        android:layout_height="72dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/sound"
+                        android:layout_gravity="center"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

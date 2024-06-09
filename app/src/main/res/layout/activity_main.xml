@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/backroundpink">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card"
+                    android:layout_width="match_parent"
+                    android:layout_height="212dp"
+                    android:layout_marginTop="-20dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="0dp">
+
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="160dp"
+                        android:layout_weight="5"
+                        android:layout_marginRight="-10dp"
+                        android:src="@drawable/diabetesmelitus"
+                        android:onClick="kediabetesmelitus"/>
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="160dp"
+                        android:layout_weight="5"
+                        android:layout_marginLeft="-10dp"
+                        android:onClick="kehipo"
+                        android:src="@drawable/penangananhipo" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="160dp"
+                        android:layout_weight="5"
+                        android:layout_marginRight="-10dp"
+                        android:src="@drawable/videointeraktif"
+                        android:onClick="kevideo"/>
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="160dp"
+                        android:layout_weight="5"
+                        android:layout_marginLeft="-10dp"
+                        android:src="@drawable/quis"
+                        android:onClick="kequis"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="160dp"
+                        android:layout_weight="5"
+                        android:layout_marginRight="-10dp"
+                        android:src="@drawable/makananmencegah"
+                        android:onClick="keMakananDM"/>
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="160dp"
+                        android:layout_weight="5"
+                        android:layout_marginLeft="-10dp"
+                        android:src="@drawable/tentangaplikasi"
+                        android:onClick="ketentang"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

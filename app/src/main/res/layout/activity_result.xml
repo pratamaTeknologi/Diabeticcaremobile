@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backroundpink"
+    android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="20dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                android:layout_marginBottom="20dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:text="Selamat anda telah menjawab semua soal dengan benar, semoga pengetahuan anda tentang diabetes melitus bisa lebih luas"
+                    android:padding="20dp"
+                    android:fontFamily="@font/opensans_semibold"/>
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/main"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="KEMBALI KE MAIN"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/buttonbiru"/>
+        </LinearLayout>
+
+</LinearLayout>

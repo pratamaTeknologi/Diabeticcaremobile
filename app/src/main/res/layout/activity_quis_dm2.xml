@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".quis.QuisDM2"
+    android:orientation="vertical"
+    android:background="@color/backroundpink">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:cardElevation="8dp"
+        android:layout_marginBottom="50dp">
+
+        <LinearLayout
+            android:id="@+id/cardview1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/arrow"
+                android:layout_marginLeft="5dp"
+                android:onClick="back"/>
+            <TextView
+                android:padding="15dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/opensans_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quis"
+                android:textSize="16sp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="20dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                android:layout_marginBottom="20dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:text="2. Diabetes melitus tipe 1 adalah jenis diabetes yang terjadi pada ibu hamil."
+                    android:padding="20dp"
+                    android:fontFamily="@font/opensans_semibold"/>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                android:layout_marginBottom="10dp">
+                <RadioButton
+                    android:id="@+id/benar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="BENAR"
+                    android:padding="20dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/opensans_semibold"/>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                android:layout_marginBottom="20dp">
+                <RadioButton
+                    android:id="@+id/salah"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SALAH"
+                    android:padding="20dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/opensans_semibold"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/cek"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="CEK"
+                android:backgroundTint="@color/buttonbiru"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

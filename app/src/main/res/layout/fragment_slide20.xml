@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".hipoglikemia.Fragment_slide20"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/backroundpink">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardslide1"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="5dp">
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="5dp"
+            android:layout_marginTop="20dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Penanganan Hiperglikemia "
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/opensans_bold"
+                    android:padding="20dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pengertian :"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/opensans_bold"
+                    android:padding="20dp"/>
+                <TextView
+                    android:id="@+id/textview2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kondisi dimana kadar glukosa di dalam darah mencapai >300 mg/dl
+\nTanda gejala hiperglikemia :\n• Mulut kering\n• Mudah haus
+\n• Pusing
+\n• Penglihatan buram atau kabur"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/opensans_semibold"
+                    android:padding="20dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Penanganan awal hiperglikemia :"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/opensans_bold"
+                    android:padding="20dp"/>
+                <TextView
+                    android:id="@+id/textview3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Suntik Insulin bagi penderita DM dan segera dibawa ke rumah sakit terdekat
+"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/opensans_semibold"
+                    android:padding="20dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</FrameLayout>
